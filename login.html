@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <script src="script/login_module.js" type="module"></script>
+</head>
+
+<body>
+    <fieldset style="width:800px;margin:0 auto;">
+        <legend>用户登录</legend>
+        <form action="">
+            <p><label for="">用户姓名：</label><input type="text" class="username"></p>
+            <p><label for="">用户密码：</label><input type="password" class="password"></p>
+            <p><input type="button" value="用户登录" class="btn"> <a href="registry.html">用户注册</a></p>
+        </form>
+    </fieldset>
+</body>
+
+</html>
+<!-- 
+    登录的思路：
+        - 点击登录按钮，将用户名和密码传输给后端 - ajax
+        - 后端获取用户名和密码去和数据库里面的数据进行匹配
+        - 后端将匹配的结果返回给前端
+        - 前端显示是否成功的结果
+ -->

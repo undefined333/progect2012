@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <script src="script/registry_module.js" type="module"></script>
+</head>
+
+<body>
+    <fieldset style="width:800px;margin:0 auto;">
+        <legend>用户注册</legend>
+        <form action="http://10.31.165.18/JS2012/projectname/php/reg.php" method="POST">
+            <!-- 准备接受注册信息的后端页面 -->
+            <p><label for="">用户姓名：</label><input type="text" name="username" class="username"><span></span></p>
+            <p><label for="">用户密码：</label><input type="password" name="password"></p>
+            <p><label for="">确认密码：</label><input type="password" name="repass"></p>
+            <p><label for="">用户邮箱：</label><input type="text" name="email"></p>
+            <p><input type="submit" value="用户注册" name="submit"></p>
+        </form>
+    </fieldset>
+</body>
+
+</html>
+<!-- 
+    注册的思路：
+    将注册的所有的信息提交到数据库 - 涉及的表单验证。
+        - 用户点击submit按钮直接提交(form+submit+name+action)
+        - 用户名重名检测：如果用户名存在不允许注册。
+        - 如果注册成功跳转到登录页面。
+ -->

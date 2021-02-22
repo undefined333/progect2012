@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="css/detail.css">
+    <script src="script/detail_module.js" type="module"></script>
+</head>
+
+<body>
+    <div class="goodsinfo">
+        <div class="box">
+            <a href="cartlist.html" target="_blank">进入购物车</a>
+        </div>
+        <div class="wrap">
+            <div id="spic">
+                <img src="" alt="" id="smallpic">
+                <div id="sf"></div>
+            </div>
+            <div id="bf">
+                <img src="" alt="" id="bpic">
+            </div>
+            <div id="ulist">
+                <a href="javascript:;" id="left">&lt;</a>
+                <div id="list">
+                    <ul>
+                        <!-- 这里是小图的位置，渲染 -->
+                    </ul>
+                </div>
+                <a href="javascript:;" id="right">&gt;</a>
+            </div>
+        </div>
+        <div class="goodsinfo-word">
+            <div class="p-name">
+                <a class="loadtitle" href="##"></a>
+            </div>
+            <div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
+            <div class="p-btn">
+                <input type="text" id="count" value="1" />
+                <a href="javascript:;">加入购物车</a>
+                <!-- void(0) -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- 
+    详情页的功能：
+    1.不同的商品展示不同的内容 -配合后端完成
+        - 在详情页面获取商品的sid
+        - 将sid传给后端，后端返回对应的数据。
+        - 取出数据，进行赋值和拼接。
+    2.放大镜效果
+    3.添加购物车
+        - 
+ -->

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品列表页</title>
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <script src="script/list_module.js" type="module"></script>
+</head>
+
+<body>
+    <!-- 两个按钮 -->
+    <button>默认</button>
+    <button>升序</button>
+    <!-- 列表页的结构 -->
+    <div class="list">
+        <ul>
+
+        </ul>
+    </div>
+    <!-- 加载分页的结构 ：page-->
+    <div class="pagelist">
+        <div class="m-style page">
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- 
+    列表的三大功能
+    1.渲染 √
+        - 需要商品的数据 - 后端接口地址 
+        http://10.31.165.18/JS2012/projectname/php/list.php
+        - 利用ajax获取数据进行渲染。
+        - 将列表页面的sid传给详情页 - 地址栏传输
+    2.排序
+    3.分页
+ -->
